@@ -15,3 +15,13 @@ This tool works by listening for a specific ID, once  a message has been receive
 We then modify the desired values and increment or decrement the counter. Since this is meant to be used for rolling counters we need to make sure we send the expected count values before the system we are spoofing sends its next value. 
 For example if our rolling counter goes from 0-4, we receive a message with count 1, we want to send 2, 3, 4, 0, 1, all before the real device sends its next count of 2. This means there are limitations due to baud rate, arbitration, etc. but if we can chatter fast enough we should be ok. YMMV
 
+## UART Tools
+
+### [Flash Dump](UART/flash_dump.py)
+Used on Foscam IP camera to manually dump flash with bootloader in debug mode. Very slow and primitive and has occassional hiccups. to fix these hiccups I created a [recovery code](UART/recover.py) that combs through the output file and ensures completeness of the dump see 
+
+### [Flash Dump Recover](UART/recover.py)
+Reads through the dumped flash from [Flash Dump](UART/flash_dump.py) tool and error corrects line by line ensuring no addresses were missed and no unexpected data exists.
+
+### [Convert to Binary](UART/convert.py)
+Reads a complete dump.txt file and converts it to a binary file to be easily parse using tools like binwalk or strings
