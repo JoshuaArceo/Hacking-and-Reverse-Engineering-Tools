@@ -2,8 +2,14 @@ ID 1234:abcd Generic:USB Keyboard
 
 STRING script /dev/null
 ENTER
+DELAY 100
 STRING bash
 ENTER
+DELAY 100
 CTRL Z
+DELAY 100
 STRING stty raw -echo; fg
+DELAY 100
 ENTER
+ENTER
+
