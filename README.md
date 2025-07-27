@@ -18,7 +18,7 @@ For example if our rolling counter goes from 0-4, we receive a message with coun
 
 ## DuckyScript
 
-###[Shell Upgrade](DuckyScript/shell_upgrade.txt)
+### [Shell Upgrade](DuckyScript/shell_upgrade.txt)
 Simple DuckyScript that I use on my FlipperZero to quickly upgrade bash reverse shells.
 
 ## UART Tools
