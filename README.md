@@ -1,5 +1,6 @@
-# Hardware-Reverse-Engineering-Tools
-### Repository of all my custom made tools that I use in reverse engineering
+# Hacking-and-Reverse-Engineering-Tools
+### Repository of all my custom made tools
+These tools are used in a variety of different use cases such as: CTFs, general automation, hardware reverse engineering, etc.
 
 ## CAN Tools
 These tools are used to quickly get set up using CAN 
