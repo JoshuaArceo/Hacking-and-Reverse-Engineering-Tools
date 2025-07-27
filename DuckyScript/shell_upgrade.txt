@@ -1,0 +1,9 @@
+ID 1234:abcd Generic:USB Keyboard
+
+STRING script /dev/null
+ENTER
+STRING bash
+ENTER
+CTRL Z
+STRING stty raw -echo; fg
+ENTER
